@@ -1,8 +1,7 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- basic -->
+<!-- basic -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- mobile metas -->
@@ -29,29 +28,19 @@
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-</head>
-<!-- body -->
+	
+	</HEAD>
 
-<body class="main-layout">
+  
+  <body class="main-layout">
   <!-- loader  -->
   <div class="loader_bg">
     <div class="loader"><img src="images/loading.gif" alt="#" /></div>
   </div>
   <!-- end loader -->
   <!-- header -->
-  <header>
   
-   <style>
-    .scaleA {
-      width: 240px;
-	  height: 200px;
-       }
-    </style>
-	
-	
-	
-  
-  
+   <header>
   
   
     <!-- header inner -->
@@ -59,30 +48,118 @@
 	
 	<img width ="100%" src="images/banner.jpg" > <br>
 	
-	 <!--<div class="col-xl-10 col-lg-8 col-md-8 col-sm-9"> -->
-              <div class="header_information">
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Auto Carousel</title>
+
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    /* ===== CAROUSEL ===== */
+    .carousel {
+      width: 100%;
+      max-width: 1400px;
+	  height: 700px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 5; /* professional banner ratio */
+      background: #000;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    /* ===== DOTS ===== */
+    .dots {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 4px;
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: #ffffff;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .carousel {
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="carousel" id="carousel">
+    <img src="images/img22.png" class="active">
+    <img src="images/img111.png">
+    <img src="images/img33.png">
+    <div class="dots"></div>  
+  </div>
+  
+  <div class="header_information">
                
 			   <div class="menu-area">
                 <div class="limit-box">
                  <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li class="active"> <a href="index.html">Home</a> </li>
+                      <!--<li class="active"> <a href="index.html">Home</a> </li>-->
+					   <li > <a href="index.html">Home</a> </li>
 					  <li> <a href="#about">About US<span class="caret"></span></a> 
 							<ul class="dropdown">
 							<li><a href="profile.html"><strong class="yellow">School Profile</a></strong></li>
 							<li><a href="mission.html"><strong class="yellow">Mission</a></strong></li>
 							<li><a href="vision.html"><strong class="yellow">Quality Policy</a></strong></li></ul>
-							<!--<li> <a href="http://www.mvmpolacherry.com/onlinefees_mvm_pol.html">Online Fees</a> </li>-->
+							<li> <a href="http://www.mvmpolacherry.com/onlinefees_mvm_pol.html">Online Fees</a> </li>
 					  
                       <li> <a href="#courses">Academics <span class="caret"></span></a> 
 							<ul class="dropdown">
 							<li><a href="curriculum.html"><strong class="yellow">curriculum</strong> </a></li>
 							<li><a href="exam.html"><strong class="yellow">Terms & Exams</a></strong></li
 							<li><a href="schooltiming.html"><strong class="yellow">School Timing</a></strong></li>
-							<!--<li><a href="mandatory.html"><strong class="yellow">Mandatory Public Disclosure </a></strong></li> --></ul>	
-							
+							<!--<li><a href="mandatory.html"><strong class="yellow">Mandatory Public Disclosure </a></strong></li> --></ul>						
                       
-							
 					  <li> <a href="admission.html">Admissions</a> </li>
                       <li> <a href="toppers2024.html">ACHIEVEMENTS</a> </li> 
 											  
@@ -90,185 +167,29 @@
 					  <li> <a href="gallery.html">Gallery</a> </li>
                       <li> <a href="contact.html">Contact</a> </li>
                      </ul>
-					 </nav> 
+					 </nav>   
 			   
 			   
-			   
-					 <marquee><br><a href="root/admission.html" style="color: maroon;"><font size="5"> Admissions open for Classes I to XII for enquiry contact School Office. 
+					 <!--<marquee><br><a href="root/admission.html" style="color: maroon;"><font size="5"> Admissions open for Classes I to XII for enquiry contact School Office. 
 						100% Result in Class X & XII Matric Higher Secondary Board Examination 2024-25.Congratulations to all the students.
-					</Font></a></marquee> 
+					</Font></a></marquee> -->
 					 
                  </div>
-				</div>
-	 
-	 
-	 
-	 
-	 
-	<!-- <div class="header">
-	
-	 <div class="container-fluid">
-	 
-          <div class="row">
-		   <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
-              <div class="full">
-                <div class="center-desk">
-				<div class="logo">
-                    <!--<a href="index.html"><img src="images/logo.png" class ="scaleA"> </a>
-
-                  </div>
-                </div>
-              </div>
-			  
-			  			  
-            </div> -->
-			 
-
-
-
-
-
-			 <!--
-               <div class="mean-last">
-                       <a href="#"><img src="images/search_icon.png" alt="#" /></a> <a href="#">login/sing up</a></div> -->             
-             </div>
-           </div>
-		  </div>
-       </div>
-	   </div>
-	 
-     <!-- end header inner -->
-
-     <!-- end header -->
-	 
-	 <style>
-		c {text-align: center;}
-		</style> 
-	 
-     <section class="slider_section">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        
-		
-		
-		<div class="carousel-inner">
-          <div class="carousel-item active">
-
-             <div class="container-fluid padding_dd">
-              <div class="carousel-caption">
-                <div class="row">
-                 <!--<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
-                   <div class="text-bg">				   
-                      <c><p><h1><font color="blue"> <align="CENTRE"> MAHARISHI VIDYA MANDIR MATRIC HIGHER SCONDARY SCHOOL</h1></font> 
-                      <p>No. 78, Solai Street,<BR>
-					  Ayanavaram,Chennai, Tamil Nadu 600023<BR>
-						Phone : 044 29855744 / 9566232222<BR>
-						E mail: mvm600023@gmail.com<br></P> </c> 
-						<a href="#">Read more</a> 
-                    </div> 
-                  </div>-->
-				  
-				  <!--<style>
-					.scaleB {
-					width: 1200px;
-					height: 650px;
-					}
-					</style> -->
-				  
-				  
-                  <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12"> 
-                    <div class="images_box">
-                      <figure>
-					  <img src="images/img22.png" class ="scaleB">
-					  </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-
-            <div class="container-fluid padding_dd">
-              <div class="carousel-caption">
-                <div class="row">
-                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                   <!-- <div class="text-bg">
-                      <c><h1><font color="blue">  MAHARISHI VIDYA MANDIR HIGHER SCONDARY SCHOOL</h1></font>
-                      <p>No. 78, Solai Street,<BR>
-					  Ayanavaram,Chennai, Tamil Nadu 600023<BR>
-						Phone : 044 29855744 / 9566232222<BR>
-						E mail: mvm600023@gmail.com<br></P> </c> -->
-                     <!-- <a href="#">Read more</a><!--<a href="#">get a qoute</a>-->
-                    </div>
-                  </div>
-
-                  <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                    <div class="images_box">
-                      <figure><img src="images/img111.png" class ="scaleB"></figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="carousel-item">
-
-            <div class="container-fluid padding_dd">
-              <div class="carousel-caption ">
-                <div class="row">
-                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-				  <!--<div class="text-bg">
-					 <c><h1><font color="blue">  MAHARISHI VIDYA MANDIR HIGHER SCONDARY SCHOOL</h1></font>
-                      <p>No. 78, Solai Street,<BR>
-					  Ayanavaram,Chennai, Tamil Nadu 600023<BR>
-						Phone : 044 29855744 / 9566232222<BR>
-						E mail: mvm600023@gmail.com<br></P></c>
-						<!--<a href="#">Read more</a><!--<a href="#">get a qoute</a>-->
-                    </div>
-                  </div>
-                  <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                    <div class="images_box">
-                      <figure><img src="images/img33.png" class ="scaleB"></figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</section>
-</div>
-</header> 
- <!--<marquee><a href="root/admission.html" style="color: maroon;"><font size="6"> Admissions open for Class-XI for enquiry contact School Office. 
-100% Result in Class X & XII CBSE Board Examination 2023-24.Congratulations to all the students
-</Font></a></marquee> -->
-<!--<table>
-<tr><td width = "900"> 
-<div class="titlepage">
-<a href="mandatory.html">  <h2>MANDATORY  <strong class="yellow">PUBLIC DISCLOSURE </strong></h2> </a> </td>
-<td width = "150"><div class="text-bg"><a href="mandatory.html">Click here to View </a></td> </tr></table>  -->
-
-
-<!-- about  -->
+				</div> </div>
+				
+				
+  
+  
+  
+				</header>
+				
+				<marquee><br><a href="root/admission.html" style="color: maroon;"><font size="5"> Admissions open for Classes I to XII for enquiry contact School Office. 
+						100% Result in Class X & XII Matric Higher Secondary Board Examination 2024-25.Congratulations to all the students.
+					</Font></a></marquee> 
+				
+				
+				
+				<!-- about  -->
 <div id="about" class="about">   
   <div class="container">
     <div class="row">
@@ -305,8 +226,8 @@
 <!-- end abouts -->
 
 
-<!-- our -->
-<div id="important" class="important">
+
+ <div id="important" class="important">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -418,7 +339,7 @@
           </div>
           <p> 		  
 		  <div id="Curriculum" class="tabcontent">
-<table>
+<table font-family: 'Georgia', serif; >
   <tr>
     <td><h3>Admission Period : From May onwards</h3></td>
   <tr>
@@ -523,7 +444,6 @@
 
 
 
-
 <!-- end MAKE --> 
 <!-- end learn --> 
 
@@ -597,40 +517,16 @@
        <div class="container">
           <div class="row">
 
-           <!-- <div class="col-md-12">
-              <form class="news">
-                <input class="newslatter" placeholder="Email" type="text" name=" Email">
-                <button class="submit">Subscribe</button> -->
+           
               </form>
             </div>
             
-			<!--<div class="col-md-12"> -->
-              <!--<h2>Newsletter</h2>-->
-              <!--<span>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in  </span>-->
+			
+            
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
               <div class="row">
-                <!--<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
-                  <div class="address">
-                    <h3>Contact us </h3>
-                    <ul class="loca">
-                      <li>
-                        <a href="#"><img src="icon/loc.png" alt="#" /></a>London 145
-                        <br>United Kingdom </li>
-                        <li>
-                          <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com </li>
-                          <li>
-                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775 </li>
-                          </ul>
-                          <ul class="social_link">
-                            <li><a href="#"><img src="icon/fb.png"></a></li>
-                            <li><a href="#"><img src="icon/tw.png"></a></li>
-                            <li><a href="#"><img src="icon/lin(2).png"></a></li>
-                            <li><a href="#"><img src="icon/instagram.png"></a></li>
-                          </ul>
-
-                        </div>
-                      </div>-->
+               
                       <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="address">
                           <!--<h3>Courses</h3>-->
@@ -682,7 +578,7 @@
               </div>
               <div class="copyright">
                 <div class="container">
-                  <p>Copyright © 2024 Design by MVM Group of Schools </a></p>
+                  <p>Copyright © 2026 Design by MVM Group of Schools </a></p>
                 </div>
               </div>
             </div>
@@ -702,8 +598,7 @@
 
           <script>
 		  
-// This example adds a marker to indicate the position of Bondi Beach in Sydney,
-// Australia.
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
@@ -723,13 +618,53 @@ function initMap() {
     icon: image
   });
 }
-</script>
- 
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>-->
-<!-- google map js -->
-<!-- end google map js -->
+  
+  
 
+  <script>
+    const slides = document.querySelectorAll(".carousel img");
+    const dotsContainer = document.querySelector(".dots");
+    let currentIndex = 0;
+    let interval;
+
+    // Create dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement("span");
+      dot.classList.add("dot");
+      if (i === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => showSlide(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll(".dot");
+
+    function showSlide(index) {
+      slides[currentIndex].classList.remove("active");
+      dots[currentIndex].classList.remove("active");
+
+      currentIndex = index;
+
+      slides[currentIndex].classList.add("active");
+      dots[currentIndex].classList.add("active");
+    }
+
+    function nextSlide() {
+      showSlide((currentIndex + 1) % slides.length);
+    }
+
+    function startAutoPlay() {
+      interval = setInterval(nextSlide, 3000);
+    }
+
+    function stopAutoPlay() {
+      clearInterval(interval);
+    }
+
+    document.getElementById("carousel").addEventListener("mouseenter", stopAutoPlay);
+    document.getElementById("carousel").addEventListener("mouseleave", startAutoPlay);
+
+    startAutoPlay();
+  </script>
 
 </body>
-
 </html>
