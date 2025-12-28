@@ -29,14 +29,15 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 	
-	</HEAD>
+	<!--</HEAD>-->
 
   
-  <body class="main-layout">
+  <!--<body class="main-layout"> -->
   <!-- loader  -->
   <div class="loader_bg">
     <div class="loader"><img src="images/loading.gif" alt="#" /></div>
   </div>
+  
   <!-- end loader -->
   <!-- header -->
   
@@ -48,9 +49,6 @@
 	
 	<img width ="100%" src="images/banner.jpg" > <br>
 	
-
-
-
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,8 +70,8 @@
     /* ===== CAROUSEL ===== */
     .carousel {
       width: 100%;
-      max-width: 1400px;
-	  height: 700px;
+      max-width: 1600px;
+	  height: 600px;
       margin: auto;
       position: relative;
       overflow: hidden;
@@ -125,18 +123,20 @@
         aspect-ratio: 16 / 9;
       }
     }
+	
+	
   </style>
 </head>
 
 
-<body>
-
-  <div class="carousel" id="carousel">
+<body >
+<div class="carousel" id="carousel">
     <img src="images/img22.png" class="active">
     <img src="images/img111.png">
     <img src="images/img33.png">
     <div class="dots"></div>  
   </div>
+  
   
   <div class="header_information">
                
@@ -167,20 +167,9 @@
 					  <li> <a href="gallery.html">Gallery</a> </li>
                       <li> <a href="contact.html">Contact</a> </li>
                      </ul>
-					 </nav>   
-			   
-			   
-					 <!--<marquee><br><a href="root/admission.html" style="color: maroon;"><font size="5"> Admissions open for Classes I to XII for enquiry contact School Office. 
-						100% Result in Class X & XII Matric Higher Secondary Board Examination 2024-25.Congratulations to all the students.
-					</Font></a></marquee> -->
-					 
+					 </nav>  				 
                  </div>
 				</div> </div>
-				
-				
-  
-  
-  
 				</header>
 				
 				<marquee><br><a href="root/admission.html" style="color: maroon;"><font size="5"> Admissions open for Classes I to XII for enquiry contact School Office. 
@@ -240,6 +229,8 @@
       </div>
     </div>
   </div>
+  
+  
   <div class="important_bg">
     <div class="container">
       <div class="row">
@@ -294,7 +285,7 @@
                   <figure><img src="images/my1.jpg"></figure>
                   <div class="overlay">
                     <a href="curriculum.html"><h3>Academics</h3>
-                    <p>Curriculum pattern of CBSE for Classes I – XII.</p></a>
+                    <p>Matriculation Curriculum Pattern for Classes I – XII.</p></a>
                   </div>
                 </div>
               </div>
@@ -341,18 +332,22 @@
 		  <div id="Curriculum" class="tabcontent">
 <table font-family: 'Georgia', serif; >
   <tr>
-    <td><h3>Admission Period : From May onwards</h3></td>
+    <td><h3>Admission Period : From April onwards</h3></td>
   <tr>
-    <td><h3>Academic Session Period : From June to May</h3></td>
+    <td><h3>Academic Session Period : From June to March</h3></td>
   </tr>
   <tr>
-    <td><h3>Vacation Period : From May to June </h3></td>
+    <td><h3>Vacation Period : From April to May</h3></td>
   </tr>
   </table>
    <table>
      <td><h3>(i) Follows curriculum pattern of School Education Department, Government of Tamil Nadu for STD. I – XII.
-	 <br><br> (ii) The grade based evaluation technique framed on a 5 point structure for the primary classes from Std. IX to X.
-	 <br><br> (iii) School Education curriculum is followed for Std. XI & XII. The Groups offered are as follows :</h4></td>
+	 <br><br> (ii) Primary (I-V): Core subjects (Tamil, English, Math, Science, Social Science) plus EVS, GK, Art, PE, Value Ed.
+	 <br><br> (iii) Middle School (VI-VIII): Similar core subjects with increased depth.
+	 <br><br> (iv) High School & Higher Secondary (IX-XII):<br>Part I: Language (Tamil, French, Sanskrit).
+	 <br>Part II: English.
+	 <br>Part III (Group Options): Students choose streams like Science 
+	 (Maths, Phy, Chem, Bio/CS) or Commerce (Eco, Comm, Accountancy, Comp Apps/Biz Maths). </h4></td>
   </tr>
   </table>
  
@@ -511,7 +506,7 @@
     <!-- end contact -->
 
     <!--  footer -->
-    <footr>
+    <footer>
 	<div class="make">
       <!--<div class="footer ">-->
        <div class="container">
@@ -578,7 +573,7 @@
               </div>
               <div class="copyright">
                 <div class="container">
-                  <p>Copyright © 2026 Design by MVM Group of Schools </a></p>
+                  <p>© 2026 Maharishi Vidya Mandir Group of Schools, All Rights Reserved </a></p>
                 </div>
               </div>
             </div>
@@ -618,6 +613,7 @@ function initMap() {
     icon: image
   });
 }
+</script>
   
   
 
@@ -653,7 +649,7 @@ function initMap() {
     }
 
     function startAutoPlay() {
-      interval = setInterval(nextSlide, 3000);
+      interval = setInterval(nextSlide, 1000);
     }
 
     function stopAutoPlay() {
